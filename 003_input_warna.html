@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Color Text</title>
+</head>
+<body>
+    <h1>Hi, how are you?</h1>
+    <input type="color" oninput="changeColor(event)">
+    <script>
+        const text = document.querySelector("h1")
+        function changeColor(event) {
+            const color = event.target.value
+            text.style.color = color
+        }
+    </script>
+</body>
+</html>
